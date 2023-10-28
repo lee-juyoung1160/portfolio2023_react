@@ -1,0 +1,95 @@
+header {
+    display: flex; 
+    justify-content: space-between; 
+    position: fixed; 
+    left: 0;
+    top: 0; 
+    width: 100%; 
+    padding: 30px 60px; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+    z-index: 100; 
+    transition: .3s; 
+    mix-blend-mode: difference;
+
+    .header__nav {
+        ul {
+            display: flex; 
+            justify-content: space-between;
+            li {
+                margin-left: 7rem;
+            }
+        }
+    }
+    .header__nav__mo {display: none; }
+
+    &.active {transform: translateY(-100%);}
+    &.menu__open {display: none;}
+
+    @media (max-width: 820px){
+        padding: 3% 5%; 
+        mix-blend-mode: normal;
+
+        .header__nav__mo {
+            display: block; 
+            width: 32px; 
+            height: 32px; 
+            z-index: 1001; 
+            transition: top .5s;
+
+            span {
+                display: block; 
+                position: relative; 
+                width: 100%; 
+                height: 1px; 
+                background-color:var(--white); 
+                transition: .3s;
+
+                &:before, &:after {
+                    content: ''; 
+                    position: absolute; 
+                    left: 0; 
+                    width: 100%; 
+                    height: 1px; 
+                    background-color:var(--white); 
+                    transition: .3s;
+                }
+                &:before {top:8px;}
+                &:after {bottom:8px;}
+            }
+            &.active {
+                span {
+                    background-color:transparent; 
+                    z-index: 1001;  
+                    &.before {transform: rotate(45deg) translate(5px, 5px); top:-4px; background-color:var(--black);}
+                    &:after {transform: rotate(-45deg) translate(2px, -1px); bottom: -4px; background-color:var(--black);}
+                }
+            }
+        }
+
+        .header__nav {
+            overflow: hidden; 
+            position: fixed; 
+            left: 0; 
+            width: 0%; 
+            height: 0%; 
+            color:var(--black); 
+            background-color:var(--white); 
+            z-index: 1000; 
+            transition: top .5s;
+            ul {
+                display: block; 
+                width: 80%; 
+                margin: 10% auto;
+                li {
+                    margin-left: 0; 
+                    font-size: 16vw; 
+                    line-height: 1.2; 
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+ 
+}
+
