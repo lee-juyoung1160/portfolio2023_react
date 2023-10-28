@@ -18,7 +18,7 @@ const Work = () => {
                     <div className="myWork__list__img">
                         <img src={work1} alt="work1" />
                         <div className="myWork__list__btn">
-                            <a href="https://wondrous-lollipop-6df179.netlify.app/" target="_blank"><i className="fa-solid fa-link"></i> SITE</a>
+                            <a href="" target="_blank"><i className="fa-solid fa-link"></i> SITE</a>
                             <a href="https://github.com/lee-juyoung1160/portfolio2023_react" target="_blank"><i className="fa-brands fa-github"></i> GIT</a>
                         </div>
                     </div>
