@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* setting */
+@import "/src/assets/scss/setting/font";
+@import "/src/assets/scss/setting/vars";
+@import "/src/assets/scss/setting/reset";
+@import "/src/assets/scss/setting/mixin";
+
+/* section */
+@import "/src/assets/scss/section/header";
+@import "/src/assets/scss/section/visual";
+@import "/src/assets/scss/section/about";
+@import "/src/assets/scss/section/work";
+@import "/src/assets/scss/section/skill";
+@import "/src/assets/scss/section/footer";

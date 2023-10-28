@@ -1,0 +1,44 @@
+:root {
+
+    --mainEng-font: "Cormorant";
+    --mainKor-font: "Pretendard";
+
+    --mainBg-color: #111;
+
+    --white: #fff;
+    --black: #000;
+
+    --green: #00dca7;
+    --blue: #1766fe;
+
+    /* 기본 폰트 설정 */
+    font-family: var(--mainEng-font), var(--mainKor-font);
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-weight: 400;
+   
+   /* 폰트를 부드럽게 렌더링하기 위한 속성  */
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ 
+   /* 아이폰 가로 모드에서 글씨 확대 금지 */
+   -webkit-text-size-adjust: 100%;
+
+}
+
+@media screen and (max-width: 1024px) {
+    :root {font-size: 60%;}
+}
+@media (max-width: 800px) {
+    :root {
+        font-size: 100%;
+        line-height: 1.4;
+    }
+}
+
+body {
+    color: var(--white);
+    background-color: var(--mainBg-color);
+}
