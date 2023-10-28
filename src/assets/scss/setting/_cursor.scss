@@ -1,0 +1,34 @@
+
+* {cursor: none;}
+#cursor {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+    z-index: 10000000;
+    mix-blend-mode: difference; /*사용자 수정*/
+}
+@media (hover: hover) and (pointer: fine) {
+    .cursor__circle {
+        width: 35px;
+        height: 35px;
+        margin-top: -50%;
+        margin-left: -50%;
+        border-radius: 50%;
+        background-color:yellowgreen;
+        transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                    background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                    border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                    width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                    height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    #cursor.arrow .cursor__circle{
+        width: 90px;
+        height: 90px;
+        mix-blend-mode: difference; /*사용자 수정*/
+        background-color:yellowgreen;
+    }
+}

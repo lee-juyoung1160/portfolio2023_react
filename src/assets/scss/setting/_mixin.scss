@@ -26,4 +26,25 @@
     left: 0;
     top: 0;
     width: 100%;
-}   
+}
+
+//keyframes
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+  @mixin animation($str) {
+    -webkit-animation: #{$str};
+    animation: #{$str};
+  }

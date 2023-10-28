@@ -5,6 +5,7 @@
 @import "/src/assets/scss/setting/vars";
 @import "/src/assets/scss/setting/reset";
 @import "/src/assets/scss/setting/mixin";
+@import "/src/assets/scss/setting/cursor";
 
 /* section */
 @import "/src/assets/scss/section/header";
@@ -13,3 +14,19 @@
 @import "/src/assets/scss/section/work";
 @import "/src/assets/scss/section/skill";
 @import "/src/assets/scss/section/footer";
+
+
+/* common */
+html, body {overflow-x: hidden;}
+.gradient__ani__text {
+    background: linear-gradient(to right, var(--green), var(--blue) ,var(--green), var(--blue), var(--green), var(--blue)); 
+    color: transparent; 
+    -webkit-background-clip: text; 
+    background-size: 500%; 
+    @include animation('bgGradient 20s linear infinite'); 
+}
+@include keyframes(bgGradient) {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}

@@ -17,8 +17,8 @@ const HomeView = () => {
         <Main>
             <Visual />
             <About />
-            <Skill />
             <Work />
+            <Skill />
         </Main>
         <Footer />
     </>

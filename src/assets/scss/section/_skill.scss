@@ -1,0 +1,95 @@
+.skill {
+    width: 100%; 
+    padding: 18rem 0; 
+    overflow: hidden;
+
+    h3 {
+        width: 70%; 
+        margin: 0 auto 5rem; 
+        font-size: 8rem; 
+        font-weight: 600; 
+        line-height: 1.1em;
+    }
+    .skill__wrap {
+        width: 70%; 
+        margin: 0 auto;
+
+        .skill__list {
+            display: flex; 
+            flex-wrap: wrap; 
+            gap:3rem; 
+            width: 7000px;
+
+            li { 
+                width: 300px; 
+                height: 400px; 
+                padding: 3.5rem 2.5rem; 
+                color: var(--white); 
+                box-sizing: border-box; 
+                line-height: 1.2; 
+                background-color: var(--green); 
+                border-radius: 20px;
+
+                .skill__item__name {
+                    font-size: 2.5rem; 
+                    font-weight: 800; 
+                    text-transform: uppercase;
+                }
+                .skill__item__percent {
+                    font-size: 8rem; 
+                    font-weight: 800; 
+                    color: rgba(255,255,255,.5);
+                }
+                .skill__item__text {
+                    margin: .3rem 0; 
+                    font-size: 2rem; 
+                    line-height: 1.4em; 
+                    opacity: .8;
+                }
+
+                &:nth-child(2n) {
+                    background-color: var(--blue);
+                    &:hover {
+                        .skill__item__name, .skill__item__text {color: var(--blue);}
+                        .skill__item__percent {color: var(--blue); opacity: .3;}
+
+                    }
+                }
+                &:hover {
+                    background-color: #fff;
+
+                    .skill__item__name, .skill__item__text {color: var(--black);}
+                    .skill__item__percent {color: rgba(0,0,0,.15);}
+                }
+            }
+        }
+        
+    }
+
+
+    @media screen and (max-width: 820px) {
+        width: 100%; 
+        height: 100vh; 
+        padding: 20vw 0;
+
+        h3 {width: 90%; margin: 0 auto 5rem; font-size: 9vw; font-weight: 700;}
+        .skill__wrap {
+            width: 80%;
+            .skill__list {
+                gap:5vw;
+                width: 5000px;
+
+                li {
+                    width: 300px; 
+                    height: 400px; 
+                    padding: 5vw 3.5vw;
+                    .skill__item__name {font-size: clamp(1.5rem, 3.5vw, 3rem);}
+                    .skill__item__percent {font-size: clamp(4rem, 9vw, 7rem);}
+                    .skill__item__text {margin: 2vw 0; font-size: clamp(1.3rem, 3vw, 2rem);}
+                }
+            }
+        }
+    }
+    
+}
+

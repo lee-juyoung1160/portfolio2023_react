@@ -1,24 +1,5 @@
 import React, { useState } from "react";
-
-
-const headerNav = [
-    {
-        title: "Home",
-        url: "#visual"
-    },
-    {
-        title: "About",
-        url: "#about"
-    },
-    {
-        title: "Work",
-        url: "#work"
-    },
-    {
-        title: "Skill",
-        url: "#skill"
-    }
-];
+import { headerNav } from "../constants";
 
 const Header = () => {
 
@@ -40,7 +21,9 @@ const Header = () => {
             ))}
             </ul>
         </nav>
-        <button type="button" className="header__nav__mo" onClick={toggleMenu}>
+        <button type="button" 
+        className="header__nav__mo" 
+        onClick={toggleMenu}>
             <span></span>
         </button>
     </header>
