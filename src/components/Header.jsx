@@ -11,7 +11,7 @@ const Header = () => {
 
     return(
     <header id="header">
-    <h1 className="header__logo"><a href="/"><span>julia</span> Portfolio</a></h1>
+    <h1 className="header__logo"><a href="./"><span>julia</span> Portfolio</a></h1>
         <nav className={`header__nav ${show ? "show" : ""}`} aria-label="메인 메뉴">
             <ul>
             {headerNav.map((nav, key) => (

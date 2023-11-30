@@ -4,16 +4,19 @@ import HomeView from "./views/HomeView";
 import smooth from "./utils/smooth";
 import link from "./utils/link";
 import cursor from "./utils/cursor";
+import fade from "./utils/fade";
+
 
 const App = () => {
     useEffect(() => {
         smooth();
         link();
         cursor();
+        fade();
     }, []);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<HomeView />} />
             </Routes>

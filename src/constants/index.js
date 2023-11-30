@@ -1,3 +1,4 @@
+
 export const headerNav = [
     {
         title: "Home",
@@ -19,7 +20,7 @@ export const headerNav = [
 
 export const skillList = [
     {
-        title: "Home",
+        title: "HTML",
         percent: "95",
         desc: "웹표준, 웹접근성을 준수하는 시멘틱 마크업과 레이아웃 구성, 유지보수와 협업을 위한 코드작성과 주석처리, 100% 하드코딩이 가능합니다."
     },
@@ -37,11 +38,6 @@ export const skillList = [
         title: "React",
         percent: "40",
         desc: "리액트 환경 셋팅, 환경 내 퍼블리싱이 가능합니다. 꾸준한 스터디로 역량을 키워나가고 있습니다."
-    },
-    {
-        title: "Vite",
-        percent: "20",
-        desc: "비트 환경 셋팅, 환경 내 퍼블리싱이 가능합니다. 꾸준한 스터디로 역량을 키워나가고 있습니다."
     },
     {
         title: "Git/Svn",
@@ -64,3 +60,4 @@ export const skillList = [
         desc: "실무에서 지라로 일정등의 업무관리를 경험해보았으며, 컨플루언스 문서 정리도 가능합니다."
     }
 ];
+

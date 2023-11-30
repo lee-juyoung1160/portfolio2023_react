@@ -15,15 +15,24 @@
 @import "/src/assets/scss/section/skill";
 @import "/src/assets/scss/section/footer";
 
+/* detail */
+@import "/src/assets/scss/detail";
+
 
 /* common */
-html, body {overflow-x: hidden;}
+html, body {overflow-x: hidden; font-family: 'Noto Sans KR', sans-serif;}
 .gradient__ani__text {
     background: linear-gradient(to right, var(--green), var(--blue) ,var(--green), var(--blue), var(--green), var(--blue)); 
     color: transparent; 
     -webkit-background-clip: text; 
     background-size: 500%; 
     @include animation('bgGradient 20s linear infinite'); 
+}
+.mo {display: none;}
+@media screen and (max-width: 820px) {
+    .mo {
+        display: block;
+    }
 }
 @include keyframes(bgGradient) {
     0% {background-position: 0% 50%}

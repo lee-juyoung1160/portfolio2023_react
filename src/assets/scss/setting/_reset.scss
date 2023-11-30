@@ -104,8 +104,8 @@ meter {
 /* 스킵메뉴 */
 .skip a {
     position: absolute;
-    left: 10px;
-    top: -92px;
+    left: -9999px;
+    top: -9999px;
     z-index: 100000;
     font-size: 1rem;
     padding: 10px 30px;

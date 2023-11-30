@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
-import aboutAni01 from "../assets/lottie/about_ani_01.json";
-import aboutAni02 from "../assets/lottie/about_ani_02.json";
+import aboutAni01 from "../../assets/lottie/about_ani_01.json";
+import aboutAni02 from "../../assets/lottie/about_ani_02.json";
 
 const About = () => {
     return (
@@ -20,9 +20,11 @@ const About = () => {
                 </div>
                 <div className="about__text about__text__02">
                     <div className="fade_action fade_left">
-                        <h4>크로스브라우징, 웹접근성에 맞는<br />웹 구현이 가능합니다.</h4>
+                        <h4>웹 퍼블리싱을 빠삭하게 다룰 수 있습니다.</h4>
                         <p>
-                            웹 표준 / 접근성 준수,<br />SEO 최적화를 위한 시멘틱 마크업을 지향합니다.<br />
+                        React 환경에서 컴포넌트 단위의 마크업 작업을 할 수 있으며, <br />
+                        어디에서도 잘 보이는 반응형,웹 접근성과 웹 표준을 <br />
+                        고려한 웹 페이지를 그려냅니다.
                         </p>
                     </div>
 
@@ -36,8 +38,8 @@ const About = () => {
                     <div className="fade_action fade_left">
                         <h4>동료들을 소중히 여기고,<br />유연한 업무 분위기를 이끌어 갑니다.</h4>
                         <p>
-                            동료들을 존중하는 협업과 의사소통을 선호합니다.<br />
-                            효율적인 협업을 위해 항상 고민합니다.
+                        맡은 프로젝트의 목적을 우선적으로 고려하며, <br />
+                        원활한 협업을 중요하게 생각해요.
                         </p>
                     </div>    
                     <Lottie 

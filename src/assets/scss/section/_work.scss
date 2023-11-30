@@ -38,14 +38,14 @@
             .myWork__list__text {
                 h4 {
                     margin: 2rm 0 5rem; 
-                    color: #fff; 
+                    color: var(--white);
                     font-size: 3.5rem; 
                     font-weight: normal;
                 }
                 .info {
                     display: flex; 
                     justify-content: space-between; 
-                    color: #888; 
+                    color: var(--grey8);
                     font-size: 1.6rem;
                 }
             }

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { skillList } from "../constants";
+import { skillList } from "../../constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

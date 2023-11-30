@@ -1,12 +1,12 @@
 import React from "react";
 
 // images
-import work1 from "../assets/images/work1.jpg";
-import work3 from "../assets/images/work3.jpg";
-import work4 from "../assets/images/work4.jpg";
-import work5 from "../assets/images/work5.jpg";
-import work6 from "../assets/images/work6.jpg";
-import work8 from "../assets/images/work8.jpg";
+import work1 from "../../assets/images/work1.jpg";
+import work3 from "../../assets/images/work3.jpg";
+import work4 from "../../assets/images/work4.jpg";
+import work5 from "../../assets/images/work5.jpg";
+import work6 from "../../assets/images/work6.jpg";
+import work8 from "../../assets/images/work8.jpg";
 
 const Work = () => {
     return (
@@ -18,7 +18,7 @@ const Work = () => {
                     <div className="myWork__list__img">
                         <img src={work1} alt="work1" />
                         <div className="myWork__list__btn">
-                            <a href="" target="_blank"><i className="fa-solid fa-link"></i> SITE</a>
+                            <a href="https://lee-juyoung1160.github.io/julia_portfolio/" target="_blank"><i className="fa-solid fa-link"></i> SITE</a>
                             <a href="https://github.com/lee-juyoung1160/portfolio2023_react" target="_blank"><i className="fa-brands fa-github"></i> GIT</a>
                         </div>
                     </div>
