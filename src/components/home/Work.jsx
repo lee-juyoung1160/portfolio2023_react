@@ -7,6 +7,7 @@ import work4 from "../../assets/images/work4.jpg";
 import work5 from "../../assets/images/work5.jpg";
 import work6 from "../../assets/images/work6.jpg";
 import work8 from "../../assets/images/work8.jpg";
+import work9 from "../../assets/images/work9.png";
 
 const Work = () => {
     return (
@@ -14,6 +15,23 @@ const Work = () => {
             <h2 className="hidden">포트폴리오 영역</h2>
             <h3 className="gradient__ani__text fade_action fade_top">WORK.</h3>
             <ul className="myWork__list" role="group">
+            <li className="fade_action fade_top">
+                    <div className="myWork__list__img">
+                        <img src={work9} alt="work9" />
+                        <div className="myWork__list__btn">
+                            <a href="https://www.mgitmall.com" target="_blank"><i className="fa-solid fa-link"></i> SITE</a>
+                        </div>
+                    </div>
+                    <div className="myWork__list__text">
+                        <h4>MGIT 자사몰</h4>
+                        <div className="info">
+                            <p>
+                                기획, 디자인, 개발, imWeb, Html5, Css3, Figma
+                            </p>
+                            <p>2023.09 - 2023.09</p>
+                        </div>
+                    </div>
+                </li>
                 <li className="fade_action fade_top">
                     <div className="myWork__list__img">
                         <img src={work1} alt="work1" />
@@ -23,7 +41,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="myWork__list__text">
-                        <h4>포트폴리오 2023</h4>
+                        <h4>포트폴리오</h4>
                         <div className="info">
                             <p>
                                 React, Scss, git, Gsap, Lottie
