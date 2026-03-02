@@ -3,11 +3,11 @@ import React from "react";
 // images
 import work1 from "../../assets/images/work1.jpg";
 import work3 from "../../assets/images/work3.jpg";
-import work4 from "../../assets/images/work4.jpg";
 import work5 from "../../assets/images/work5.jpg";
 import work6 from "../../assets/images/work6.jpg";
 import work8 from "../../assets/images/work8.jpg";
-import work9 from "../../assets/images/work9.png";
+import work10 from "../../assets/images/work10.png";
+import work11 from "../../assets/images/work11.png";
 
 const Work = () => {
     return (
@@ -15,20 +15,38 @@ const Work = () => {
             <h2 className="hidden">포트폴리오 영역</h2>
             <h3 className="gradient__ani__text fade_action fade_top">WORK.</h3>
             <ul className="myWork__list" role="group">
-            <li className="fade_action fade_top">
+                <li className="fade_action fade_top">
                     <div className="myWork__list__img">
-                        <img src={work9} alt="work9" />
+                        <img src={work10} alt="work10" />
                         <div className="myWork__list__btn">
-                            <a href="https://www.mgitmall.com" target="_blank"><i className="fa-solid fa-link"></i> SITE</a>
+                           <a href="https://kt-clould-portal-test.vercel.app/views/home_3.html" target="_blank"><i className="fa-solid fa-link"></i> Demo</a>
+                            <a href="https://kt-clould-portal-test.vercel.app/_guide.html" target="_blank"><i className="fa-solid fa-link"></i> Guide</a>
                         </div>
                     </div>
                     <div className="myWork__list__text">
-                        <h4>MGIT 자사몰</h4>
+                        <h4>KT Cloud-내부망</h4>
                         <div className="info">
                             <p>
-                                기획, 디자인, 개발, imWeb, Html5, Css3, Figma
+                                Html5, Css3, javascript
                             </p>
-                            <p>2023.09 - 2023.09</p>
+                            <p>2025.03 - 2025.05</p>
+                        </div>
+                    </div>
+                </li>
+                <li className="fade_action fade_top">
+                    <div className="myWork__list__img">
+                        <img src={work11} alt="work9" />
+                        <div className="myWork__list__btn">
+                            <a href="https://www.aistudios.com/?r=0" target="_blank"><i className="fa-solid fa-link"></i> Site</a>
+                        </div>
+                    </div>
+                    <div className="myWork__list__text">
+                        <h4>AI Studios</h4>
+                        <div className="info">
+                            <p>
+                                기획, 디자인, 개발, Webflow, Html5, Css3, javascript
+                            </p>
+                            <p>2025.05 - 2026.02</p>
                         </div>
                     </div>
                 </li>
@@ -114,23 +132,6 @@ const Work = () => {
                         <div className="info">
                             <p>
                                 Html5, Css3, javascript
-                            </p>
-                            <p>2023.5 - 2023.5</p>
-                        </div>
-                    </div>
-                </li>
-                <li className="fade_action fade_top">
-                    <div className="myWork__list__img">
-                        <img src={work4} alt="work4" />
-                        <div className="myWork__list__btn">
-                            <a href="https://drprio.com/" target="_blank"><i className="fa-solid fa-link"></i> SITE</a>
-                        </div>
-                    </div>
-                    <div className="myWork__list__text">
-                        <h4>닥터프리오</h4>
-                        <div className="info">
-                            <p>
-                                Html5, Css3, Jquery, Cafe24
                             </p>
                             <p>2023.5 - 2023.5</p>
                         </div>
